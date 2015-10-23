@@ -6,6 +6,11 @@ php:
   - 7.0
   - hhvm
 
+env:
+  global:
+    - APP_KEY=i1KLWiqXo12PbsUFqJSb9TId85b8qHU4
+
+
 matrix:
   allow_failures:
     - php: 7.0
