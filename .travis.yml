@@ -23,3 +23,7 @@ script: vendor/bin/phpunit --configuration phpunit.xml --coverage-text
 
 after_success:
   - if [ $TRAVIS_PHP_VERSION = "5.6" ]; then curl $ENVOYER_HOOK; fi
+
+addons:
+  code_climate:
+    repo_token: b4833d908077d8580d9ec9ce6366e8c25d5bff0716baff004a7eaa1ca9f01d7c
